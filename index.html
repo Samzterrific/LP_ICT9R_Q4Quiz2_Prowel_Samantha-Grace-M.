@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Score Analyzer</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";; rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";; rel="stylesheet">
+
+	<style>
+
+		body {
+			background-color: #dcfbff;
+			font-family: Futura;
+		}
+
+
+	</style>
+</head>
+<body>
+<center>
+
+	<br>
+	<br>
+
+<div class="container">
+
+	<h1> Score Analyzer </h1>
+	<br>
+
+	<details ontoggle="message1()">
+		<summary>
+			<u> Click me! </u>
+			<br>
+			<i id="message"></i>
+		</summary>
+	</details>
+
+	<br>
+
+	<img src=math.png style="width: 300px; height: 300px ">
+	<img src=science.png style="width:300px; height: 300px ">
+	<img src=english.jpg style="width: 300px; height: 300px ">
+	<br>
+	<br>
+	<input type="number" id="mathInput">
+	<input type="number" id="sciInput">
+	<input type="number" id="engInput">
+
+	<br>
+	<br>
+
+	<button onclick="findAverage()" style="background-color: #4ca3ac; color: white"> Get Your Average! </button>
+
+	<br>
+
+	<h3 id="result"> </h3>
+
+	<br>
+	<br>
+
+	<i><p> Note: Grading Criteria and Equivalents can vary depending on school or district.</p><i>
+
+
+</div>
+
+<script>
+
+		function message1() {
+			document.getElementById("message").innerHTML = "Give the scores to get your average!";
+		}
+
+	  function findAverage() {
+
+		let math = parseInt(document.getElementById("mathInput").value);
+		let sci = parseInt(document.getElementById("sciInput").value);
+		let eng = parseInt(document.getElementById("engInput").value);
+
+
+		var average = (math+sci+eng)/3;
+				
+
+		switch (average) {
+
+		case 70: 
+			score = "Do better!";
+			break;
+
+		case 71: 
+			score = "Do better!";
+			break;
+
+		case 72: 
+			score = "Do better!";
+			break;
+
+		case 73: 
+			score = "Do better!";
+			break;
+
+		case 74: 
+			score = "Do better!";
+			break;
+
+		case 75: 
+			score = "Needs Improvement.";
+			break;
+
+		case 76: 
+			score = "Needs Improvement.";
+			break;
+
+		case 77: 
+			score = "Needs Improvement.";
+			break;
+
+		case 78: 
+			score = "Needs Improvement.";
+			break;
+
+		case 79: 
+			score = "Needs Improvement.";
+			break;
+
+		case 80: 
+			score = "Satisfactory!";
+			break;
+
+		case 81: 
+			score = "Satisfactory!";
+			break;
+
+		case 82: 
+			score = "Satisfactory!";
+			break;
+
+		case 83: 
+			score = "Satisfactory!";
+			break;
+
+		case 84: 
+			score = "Satisfactory!";
+			break;
+
+		case 85: 
+			score = "Satisfactory!";
+			break;
+
+		case 86: 
+			score = "Satisfactory!";
+			break;
+
+		case 87: 
+			score = "Above Satisfactory!";
+			break;
+
+		case 88: 
+			score = "Above Satisfactory!";
+			break;
+
+		case 89: 
+			score = "Above Satisfactory!";
+			break;
+
+		case 90: 
+			score = "Above Satisfactory!";
+			break;
+
+		case 91: 
+			score = "Above Satisfactory!";
+			break;
+
+		case 92: 
+			score = "Above Satisfactory!";
+			break;
+
+		case 93: 
+			score = "Above Satisfactory!";
+			break;
+
+		case 94: 
+			score = "Excellent work!";
+			break;
+
+		case 95: 
+			score = "Excellent work!";
+			break;
+
+		case 96: 
+			score = "Excellent work!";
+			break;
+
+		case 97: 
+			score = "Excellent work!";
+			break;
+
+		case 98: 
+			score = "Excellent work!";
+			break;
+
+		case 99: 
+			score = "Excellent work!";
+			break;
+
+		case 100: 
+			score = "Excellent work!";
+			break;
+
+
+		default:
+			score = "Invalid input! Please retry."; }
+
+		document.getElementById("result").innerHTML = "Your average is: " + Math.round(average) + "|" + score;
+	}
+
+
+</script>
+
+</center>
+</body>
+</html>
